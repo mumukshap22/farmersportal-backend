@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "postrequest",
+			"name": "register",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -188,6 +188,47 @@
 						"user",
 						"changepassword",
 						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contactus",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Mumuksha\",\r\n    \"phone\":\"09987544\",\r\n    \"emailaddress\":\"mumuksha@yalu.com\",\r\n    \"message\":\"khushi project banwade please\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/contactus/submit/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"contactus",
+						"submit",
+						""
+					],
+					"query": [
+						{
+							"key": "accept",
+							"value": "application/json",
+							"disabled": true
+						}
 					]
 				}
 			},
